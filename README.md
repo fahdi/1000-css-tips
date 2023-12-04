@@ -48,3 +48,26 @@ In this example:
 
 This setup is particularly useful for creating responsive designs, as Flexbox handles varying screen sizes gracefully.
 </details>
+
+<details>
+<summary>Tip 3: Leverage CSS Variables for Easier Maintenance</summary>
+CSS variables, also known as custom properties, make your code more maintainable and easier to update. They allow you to define a value once and use it in multiple places. Here's a simple example:
+
+```css
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #FFC107;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+```
+
+In this example:
+
+- We declare two variables `--primary-color` and `--secondary-color` under `:root`, which is the highest level and accessible globally.
+- Use `var(--variable-name)` to apply these colors in other CSS rules.
+- Changing the value of these variables at the `:root` level will update all instances where they are used, making it incredibly efficient to modify color schemes or font sizes across your entire website.
+</details>
