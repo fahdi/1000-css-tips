@@ -71,3 +71,29 @@ In this example:
 - Use `var(--variable-name)` to apply these colors in other CSS rules.
 - Changing the value of these variables at the `:root` level will update all instances where they are used, making it incredibly efficient to modify color schemes or font sizes across your entire website.
 </details>
+
+<details>
+<summary>Tip 4: Implement Media Queries for Responsive Design</summary>
+**Media queries are a cornerstone of responsive design,** allowing your CSS to adapt to different screen sizes and devices.
+
+**Example:**
+
+```css
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    flex-direction: row;
+  }
+}
+```
+
+- `@media screen and (max-width: 600px)` targets screens up to 600px wide. Here, `.container`'s children are stacked vertically.
+- `@media screen and (min-width: 601px)` targets screens wider than 600px, arranging `.container`'s children horizontally.
+
+**Using media queries, you can ensure your site looks great on all devices,** from mobile phones to large desktop monitors.
+</details>
