@@ -74,6 +74,7 @@ In this example:
 
 <details>
 <summary>Tip 4: Implement Media Queries for Responsive Design</summary>
+  
 **Media queries are a cornerstone of responsive design,** allowing your CSS to adapt to different screen sizes and devices.
 
 **Example:**
