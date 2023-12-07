@@ -98,3 +98,38 @@ In this example:
 
 **Using media queries, you can ensure your site looks great on all devices,** from mobile phones to large desktop monitors.
 </details>
+
+<details>
+<summary>Tip 5: Optimize Typography with `rem` and `em` Units</summary>
+
+Using `rem` and `em` units for typography ensures scalability and readability across devices.
+
+For example:
+
+```css
+html {
+  font-size: 16px; /* Base font size */
+}
+
+h1 {
+  font-size: 2rem; /* 32px */
+}
+
+p {
+  font-size: 1em; /* 16px */
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px; /* Smaller base font size for mobile */
+  }
+}
+```
+
+In this setup:
+- `rem` (root em) is relative to the base font-size of the `<html>` element. Here, `1rem` is `16px`.
+- `em` is relative to the font-size of its direct or nearest parent. In `p`, `1em` is `16px`.
+- The media query reduces the base font size for screens narrower than 600px, making `1rem` equal to `14px`.
+
+These units help maintain consistent and responsive typography, adapting to the user's screen and preferences.
+</details>
